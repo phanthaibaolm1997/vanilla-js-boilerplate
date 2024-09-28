@@ -171,6 +171,8 @@
       document.getElementById("getUserInfoBtn").addEventListener("click", function () {
         const user = Telegram.WebApp.initDataUnsafe.user;
 
+        console.log(user);
+
         if (user) {
           document.getElementById("userInfo").innerHTML = `
           <p><strong>Username:</strong> ${user.username || "N/A"}</p>
